@@ -1,31 +1,44 @@
 @use '../../lib/service.scss' as s;
 
 
-.alert{
-    max-width: 1000px;
-    margin: 0 auto;
-    margin-top: s.space(4);
-    border-radius: 8px;
+.card {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: s.space(4);
-    gap: s.space(2);
-    box-shadow: 2px 2px 6px 0px gray;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    padding: s.space(6) s.space(5);
+    background-color: #fff;
 
-
-    &__title{
-        font-size: 18px;
-        display: block;
-        font-weight: bold;
-        margin-bottom: s.space(4);  
+    &__header {
+        flex-grow: 1;
     }
 
-    &__button{
-        padding: s.space(3) s.space(16);
-        border-radius: 4px; 
-        background-color: blue;
-        color: s.color('lighter');
+    &__title {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    &__subtitle {
+        font-size: 10px;
+        margin-top: 8px;
+        color: #666;
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        width: 250px;
+        text-align: center;
+    }
+
+    &__link {
+        width: 100%;
+        padding: 12px;
+        font-size: 20px;
+        color: #fff;
+        background-color: s.color('primary');
         text-decoration: none;
     }
 }

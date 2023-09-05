@@ -1,0 +1,22 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 20%;
+}
+.field__label {
+  font-size: 14px;
+}
+.field__input {
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.field--disabled {
+  position: absolute;
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

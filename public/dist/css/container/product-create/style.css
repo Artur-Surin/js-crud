@@ -12,9 +12,8 @@ section {
 }
 
 .box .click {
-  background-color: #00ffff;
   border: 2px solid rgb(15, 15, 15);
-  color: #000000;
+  color: #585858;
   text-decoration: none;
   padding: 6px;
 }
@@ -53,7 +52,8 @@ section {
 .form__button {
   border: 1px solid #ddd;
   padding: 8px;
-  background-color: rgb(62, 62, 253);
+  background-color: #0050FF;
+  color: white;
 }
 .form__box {
   display: grid;

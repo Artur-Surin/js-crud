@@ -1,44 +1,39 @@
 @use '../../lib/service.scss' as s;
 
-.form {
+.nav {
     display: flex;
-    flex-direction: column;
+    width: 700px;
     padding: s.space(4);
+    flex-direction: column;
     gap: s.space(8);
 
     &__title {
+        font-size: 24px;
+        font-weight: bold;
+        border-bottom: 1px solid s.color("light");
+        padding: s.space(2);
+    }
+
+    &__list {
         font-size: 20px;
         font-weight: bold;
+        border-bottom: 1px solid s.color("light");
         padding-bottom: s.space(1);
-        border-bottom: 1px solid s.color('light');
+        cursor: pointer;
     }
 
-    &__content {
-        display: grid;
-        gap: s.space(6);
+    &__list:hover {
+        // opacity: 0.7;
+        color: s.color('dark-primary');
+        font-style: italic;
+
     }
 
-    &__field {
-        display: flex;
-        flex-direction: column;
-        gap: s.space(2);
-    }
-
-    &__label {
-        font-size: 14px;
-        padding-top: 10px;
-    }
-
-    &__input {
-        border: 1px solid s.color('light');
-        padding: s.space(2);
-    }
-
-    &__button {
-        border: 1px solid s.color('light');
-        padding: s.space(2);
-        border-radius: 20px;
-        margin-top: 10px;
+    &__link {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: s.color("primary")
     }
 }
 
@@ -46,12 +41,5 @@ main {
     display: flex;
     flex-direction: column;
     gap: s.space(10);
-}
-
-.user-list {
-    li {
-        padding-right: 15px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
+    align-items: center;
 }

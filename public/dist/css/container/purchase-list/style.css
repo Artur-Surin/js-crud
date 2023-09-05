@@ -1,0 +1,21 @@
+/* Error: There's already a module with namespace "s".
+ *     ,
+ * 1   | @use '../../lib/service.scss' as s;
+ *     | ================================== original @use
+ * ... |
+ * 3   | @use '../../lib/service.scss' as s;
+ *     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ new @use
+ *     '
+ *   src\component\text\style.scss 3:1           @use
+ *   src\container\purchase-list\style.scss 8:1  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: There's already a module with namespace \"s\".\a     \2577 \a 1   \2502  @use '../../lib/service.scss' as s;\d\a     \2502  \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  original @use\a... \2502 \a 3   \2502  @use '../../lib/service.scss' as s;\d\a     \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ new @use\a     \2575 \a   src\\component\\text\\style.scss 3:1           @use\a   src\\container\\purchase-list\\style.scss 8:1  root stylesheet";
+}

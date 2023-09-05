@@ -36,17 +36,15 @@ main {
   align-items: center;
 }
 .list__click {
-  border: 1px solid #000000;
+  border: 1px solid #585858;
   padding: 8px;
-  background-color: #00ffff;
-  color: #000000;
+  color: #585858;
   text-decoration: none;
 }
 .list__click:hover {
-  border: 1px solid #00ffff;
+  border: 1px solid;
   padding: 8px;
-  background-color: #000000;
-  color: #00ffff;
+  background-color: #585858;
   text-decoration: none;
 }
 .list__items {
@@ -97,7 +95,7 @@ main {
   font-size: 20px;
 }
 .list__item__price .edit__link {
-  color: rgb(62, 62, 253);
+  color: #0050FF;
   font-size: 16px;
   text-decoration: none;
 }
